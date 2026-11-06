@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário de inscrição no Clube do Vinil de Bossa Nova para receber edições especiais e newsletters.">
+  <title>Cadastro - Bossa Nova Brasil</title>
+</head>
+<body>
+  <a href="#main-content">Pular para o conteúdo</a>
+
+  <header>
+    <h1>Bossa Nova Brasil</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="dados.html">Dados</a></li>
+        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>Inscrição no Clube do Vinil de Bossa Nova</h2>
+      <p>Preencha os campos abaixo para fazer parte da nossa comunidade de ouvintes e colecionadores.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <p>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required autocomplete="name">
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </p>
+
+          <p>
+            <label for="telefone">Telefone Celular:</label><br>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[0-9]{11}" title="Digite apenas os 11 números com DDD (ex: 47999998888)">
+          </p>
+
+          <p>
+            <label for="data-nascimento">Data de Nascimento:</label><br>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências de Assinatura</legend>
+
+          <p>Plano do Clube (obrigatório):</p>
+          <p>
+            <input type="radio" id="plano-digital" name="plano" value="digital" required>
+            <label for="plano-digital">Digital (Apenas Newsletter semanal)</label><br>
+            
+            <input type="radio" id="plano-vinil" name="plano" value="vinil">
+            <label for="plano-vinil">Vinil Mensal (1 Disco de vinil por mês)</label><br>
+
+            <input type="radio" id="plano-premium" name="plano" value="premium">
+            <label for="plano-premium">Premium (2 Discos + Revista temática)</label>
+          </p>
+
+          <p>
+            <label for="quantidade-discos">Quantidade de Discos que já possui na coleção (0 a 500):</label><br>
+            <input type="number" id="quantidade-discos" name="quantidade-discos" min="0" max="500">
+          </p>
+
+          <p>
+            <label for="orcamento-mensal">Orçamento aproximado mensal para discos (R$):</label><br>
+            <input type="number" id="orcamento-mensal" name="orcamento-mensal" step="0.50" min="0">
+          </p>
+
+          <p>
+            <label for="estilo-favorito">Estilo Preferido de Bossa Nova:</label><br>
+            <select id="estilo-favorito" name="estilo-favorito" required>
+              <option value="">-- Selecione uma opção --</option>
+              <option value="bossa-jazz">Samba-Jazz Instrumentista</option>
+              <option value="bossa-tradicional">Bossa Nova Tradicional (Violão e Voz)</option>
+              <option value="orquestral">Bossa Nova Orquestrada</option>
+            </select>
+          </p>
+
+          <p>Formatos de interesse extra:</p>
+          <p>
+            <input type="checkbox" id="formato-cd" name="formatos" value="cd">
+            <label for="formato-cd">Compact Disc (CD)</label><br>
+
+            <input type="checkbox" id="formato-fitacassete" name="formatos" value="fita">
+            <label for="formato-fitacassete">Fita Cassete</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mensagem e Termos</legend>
+
+          <p>
+            <label for="observacoes">Álbuns ou artistas que você mais deseja ver no clube (máximo 300 caracteres):</label><br>
+            <textarea id="observacoes" name="observacoes" maxlength="300" rows="4" cols="50"></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="aceite-termos" name="aceite-termos" required>
+            <label for="aceite-termos">Declaro que li e aceito os termos de participação e política de privacidade do site.</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar Cadastro</button>
+          <button type="reset">Limpar Formulário</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Thomas Heise | Turma DS25 M1 | 2026</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informações de contato e formulário de envio de mensagens com o responsável pelo site Bossa Nova Brasil.">
+  <title>Contato - Bossa Nova Brasil</title>
+</head>
+<body>
+  <a href="#main-content">Pular para o conteúdo</a>
+
+  <header>
+    <h1>Bossa Nova Brasil</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="dados.html">Dados</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>Fale Conosco</h2>
+      <p>Utilize os canais de atendimento ou envie uma mensagem diretamente pelo formulário abaixo.</p>
+
+      <address>
+        <strong>Sede da Associação Bossa Nova Brasil</strong><br>
+        Avenida Atlântica, nº 1500, Sala 402 - Copacabana<br>
+        Rio de Janeiro - RJ, CEP: 22021-000<br>
+        E-mail: <a href="mailto:contato@bossanovabrasil.com.br">contato@bossanovabrasil.com.br</a><br>
+        Telefone: <a href="tel:+552133334444">(21) 3333-4444</a>
+      </address>
+
+      <h3>Horários de Atendimento</h3>
+      <dl>
+        <dt>Segunda a Sexta-feira</dt>
+        <dd>Das 09:00 às 18:00</dd>
+        <dt>Sábados</dt>
+        <dd>Das 09:00 às 13:00</dd>
+        <dt>Domingos e Feriados</dt>
+        <dd>Sem expediente presencial</dd>
+      </dl>
+
+      <p>Localização no mapa: <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Ver endereço no Google Maps</a></p>
+    </section>
+
+    <section>
+      <h2>Envie uma Mensagem Directa</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="contato-nome">Nome Completo:</label><br>
+          <input type="text" id="contato-nome" name="contato-nome" required autocomplete="name">
+        </p>
+
+        <p>
+          <label for="contato-email">E-mail de Contato:</label><br>
+          <input type="email" id="contato-email" name="contato-email" required autocomplete="email">
+        </p>
+
+        <p>
+          <label for="contato-assunto">Assunto da Mensagem:</label><br>
+          <select id="contato-assunto" name="contato-assunto" required>
+            <option value="">-- Escolha o assunto --</option>
+            <option value="duvidas">Dúvidas Frequentes</option>
+            <option value="sugestao">Sugestão de Conteúdo</option>
+            <option value="parcerias">Parcerias e Imprensa</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="contato-mensagem">Mensagem:</label><br>
+          <textarea id="contato-mensagem" name="contato-mensagem" required rows="5" cols="50"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Enviar Mensagem</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Thomas Heise | Turma DS25 M1 | 2026</p>
+  </footer>
+</body>
+</html>
